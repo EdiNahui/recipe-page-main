@@ -1,0 +1,101 @@
+
+body{
+    display:flex;
+    background-color: hsl(30, 54%, 90%);
+    align-items:center;
+    flex-direction:column;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 0.3cm;
+    max-width:60vh;
+    max-height:100%;
+    margin: 5em 0;
+}
+
+section h1, section h2, section h4, p, table, li{
+    padding: 0 25px;
+}
+img{
+    align-self:center;
+    width:90%;
+    height:auto;
+    margin-top:30px;
+    border-radius:0.3cm;
+}
+
+h1, h2, h4{
+    font-family: 'Young Serif', sans-serif;
+   margin: 15px 0;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    font-size:30px;
+}
+
+p, li, td{
+    text-wrap:wrap;
+    font-size:13px;
+    color: hsl(30, 18%, 40%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+h4{
+    color: hsl(332, 51%, 32%);
+}
+
+#preparation{
+    background-color: hsl(330, 100%, 98%);
+    margin: 10px 30px;
+    border-radius: 0.3cm;
+}
+
+li, p{
+    margin-bottom: 10px;
+}
+
+#preparation li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+#ingredients li::marker, #instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight:bold;
+}
+table{
+    margin: 0 5%;
+    border-collapse:collapse;
+    width:90%;
+    margin-bottom:20px;
+}
+th, td{
+    text-align:left;
+    padding:5px 5px 5px 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+tr td:first-child + td{
+    color: hsl(14, 45%, 36%);
+    font-weight:bold;
+}
+
+@media screen and (max-width: 450px){
+    body{
+        background-color:hsl(0, 0%, 100%);
+    }
+    main{
+        margin:0;
+    }
+    .attribution{
+        visibility: hidden;
+    }
+}
+
+
